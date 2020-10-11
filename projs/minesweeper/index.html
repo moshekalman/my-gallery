@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MINESWEEPER!</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body onload="init()">
+    <div class="reset">
+        <button onclick="resetGame(this)">Easy</button>
+        <button onclick="resetGame(this)">Medium</button>
+        <button onclick="resetGame(this)">Hard</button>
+
+    </div>
+    <fieldset class="player-name">
+        <legend>Insert Your name (4 to 10 characters)</legend>
+        <input id="name" type="text" placeholder="Your Name Here..." minlength="4" maxlength="10">
+        <button type="button" id="btnInsert">Enter</button>
+    </fieldset>
+    
+    <div class="game-over">
+        <h1> <span class="game-state"></span> Start Again If You Wish</h1>
+    </div>
+
+    <div class="board-info">
+        <h2>Good Luck:</h2>
+        <h2>
+            Lives:
+            <span class="lives"> </span>
+            <span class="emoji" onclick="resetGame(this)">🙂</span>
+        </h2>
+        <h3 class="timer"></h3>
+    </div>
+    <div class="board-container"></div>
+
+    <div class="helpers">
+        <h1>
+            <span class="hints" onclick="getHint()">Hints: 💡💡💡</span>
+        </h1>
+        <button onclick="getSafeClick()">Safe Clicks: <span class="safe-clicks">3</span></button>
+        <button onclick="getUndo()">Undo</button>
+        <button onclick="getManual()">Manual Mode</button>
+    </div>
+
+    <fieldset>
+        <legend>Best Scores</legend>
+        <div id="best">
+            <h3>Easy Champ: <span id="easy"></span> </h3>
+            <h3>Medium Champ: <span id="medium"></span> </h3>
+            <h3>Hard Champ: <span id="hard"></span> </h3>
+        </div>
+    </fieldset>
+
+    <div class="mine">
+    </div>
+
+    <div class="mine1">
+    </div>
+
+    <div class="mine2">
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/mines.js"></script>
+    <script src="js/cells.js"></script>
+    <script src="js/extras.js"></script>
+    <script src="js/storage.js"></script>
+</body>
+
+</html>

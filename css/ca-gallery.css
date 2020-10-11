@@ -86,10 +86,14 @@ body {
 .offcanvas-btn-open {
   margin-right: 80vw;
 }
+
+#contact{
+  padding: 15px;
+}
 .offcanvas-aside {
   position: fixed;
   height: 100%;
-  background: red;
+  background:#3beb96;
   width: 80vw;
   right: -80vw;
   z-index: 10;
@@ -192,7 +196,7 @@ body {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/header-bg.jpg");
+  background-image: url("../img/smith-will-image.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;

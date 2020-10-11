@@ -1,0 +1,177 @@
+body {
+  background-image: linear-gradient(to right, darkblue, darkcyan,darkcyan, darkcyan, darkblue);
+  color:white;
+  text-shadow: 2px 2px 5px cyan;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+fieldset{
+  margin:5;
+}
+
+.player-name{
+  color: rgb(8, 8, 75);
+  background-image: radial-gradient(#e66465, #9198e5);
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 200px;
+  max-width: 300px;
+  left: 0;
+  right: 0;
+  top: 400px;
+  border: ridge cyan;
+  border-radius: 10px;
+  display: none;
+}
+
+input{
+  padding: 7px;
+  height: 20px;
+  outline: none;
+}
+
+button{
+  outline: none;
+}
+
+table{
+  margin: 0 auto;
+  border: 5px solid;
+  border-style: outset;
+  box-shadow: 0px 0px 8px 10px rgba(0, 0, 0, 0.589);
+}
+
+.reset button{
+  width: 100px;
+  height: 50px;
+  border-radius: 16px;
+  border-color: aqua;
+  background-color: bisque;
+  font-size: larger;
+}
+
+.cell {
+  border: 3px solid;
+  border-style: outset;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.5em;
+  background-color: darkgrey;
+  text-shadow: 0 0 3px red, 0 0 6px black;
+  cursor: pointer;
+}
+
+.cell:hover{
+  border-color: darkblue;
+}
+
+.game-over{
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  max-width: fit-content;
+  max-height: fit-content;
+  display: none;
+  background-color: honeydew;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 10px dodgerblue;
+}
+
+.game-over h1{
+  margin: 0;
+  color: black;
+  padding: 5px;
+  text-align: center;
+}
+
+.show{
+  display: block;
+}
+
+.shown{
+  background-color:grey;
+  border: 3px solid;
+  border-style:groove ;
+  border-color: darkviolet;
+}
+
+.exploded{
+  border: 3px solid;
+  border-style: dashed ;
+  background-color: red;
+  border-color:darkred;
+}
+
+.lives{
+  text-transform: capitalize;
+}
+
+
+.emoji{
+  display: block;
+  margin-top: 5px;
+  margin-bottom: none;
+}
+
+.emoji:hover{
+cursor: pointer;
+}
+
+.safe{
+  transition: 3s;
+  background-color: blue;
+}
+
+div.board-info{
+  margin: 10px 0;
+  background-image: linear-gradient(to right, violet, blueviolet , darkmagenta, blueviolet, violet);
+  border-radius: 10px;
+  border-color: honeydew;
+  border-style: groove;
+}
+
+div.helpers{
+  margin: 10px 0;
+  background-image: linear-gradient(to right, violet, blueviolet , darkmagenta, blueviolet, violet);
+  text-transform: capitalize;
+  border-radius: 20px;
+  border-color: honeydew;
+  border-style: groove;
+}
+
+
+
+.helpers button{
+  width: 150px;
+  height: 50px;
+  border-radius: 16px;
+  font-weight: bold;
+  font-size: larger;
+  background-color:blue;
+  color: aquamarine;
+  margin: 5px;
+  cursor: pointer;
+}
+
+
+.helpers .hints{
+  cursor: pointer;
+}
+
+.hints{
+transition: 0.5s;
+}
+
+.timer{
+text-align: left;
+}
+
+h3.timer{
+  margin-left: 10px;
+  font-style: italic;
+  font: Verdana;
+}
